@@ -15,11 +15,13 @@ class CreateEpisodesTable extends Migration
     {
         Schema::create('episodes', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('podcast_id')
+                  ->constrained('podcasts')
+                  ->cascadeOnDelete();
             $table->string('title');
             $table->string('description')->nullable();
             $table->string('audio_url')->nullable();
             $table->string('episode_url')->nullable();
-            $table->foreignId('podcast_id')->constrained();
             $table->timestamps();
         });
     }
