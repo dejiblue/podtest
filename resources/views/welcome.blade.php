@@ -60,8 +60,7 @@
             text-transform: uppercase;
         }
         .imgg {
-            background-image: url('b.png');
-            background-repeat: no-repeat;̥
+            background-repeat: no-repeat;
             background-position: 50% 0;
             -ms-background-size: cover;
             -o-background-size: cover;
@@ -116,17 +115,16 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            How To Install
-            {{-- <a style="color: #61dafb"  href="https://github.com/rap2hpoutre/laravel-log-viewer">Log Viewer</a> in --}}
+            Podcast with
             <span style="color: #ff2d20">
                 <strong>Laravel</strong>
             </span>
         </div>
         <br>
         <div class="links">
-            <a href="#"><strong style="font-size: 60px">- By Shailesh Ladumor</strong></a>
+            <a href="#"><strong style="font-size: 60px">- By Ayodeji Olojede</strong></a>
         </div>
-      
+
         {{-- <marquee direction="down" width="950" height="300" behavior="alternate" style="border:none">
             <marquee behavior="alternate">
                 <div class="links" style="margin-top: 50px">
@@ -134,7 +132,7 @@
                 </div>
             </marquee>
         </marquee> --}}
-        <img style="margin-left:1565px" id="hideMe" src="https://cliply.co/wp-content/uploads/2020/01/372001730_SUBSCRIBE_BUTTON_400px.gif">
+        <!--<img style="margin-left:1565px" id="hideMe" src="https://cliply.co/wp-content/uploads/2020/01/372001730_SUBSCRIBE_BUTTON_400px.gif">-->
     </div>
 </div>
 </body>
