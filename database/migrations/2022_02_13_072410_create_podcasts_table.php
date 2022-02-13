@@ -16,11 +16,11 @@ class CreatePodcastsTable extends Migration
         Schema::create('podcasts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('description');
-            $table->string('language');
-            $table->string('artwork_url');
-            $table->string('rss_feed_url');
-            $table->string('website_url');
+            $table->string('description')->nullable();
+            $table->string('language')->nullable();
+            $table->string('artwork_url')->nullable();
+            $table->string('rss_feed_url')->nullable();
+            $table->string('website_url')->nullable();
             $table->timestamps();
         });
     }

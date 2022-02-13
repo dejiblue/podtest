@@ -17,7 +17,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $episode_url
  * @property string $rss_feed_url
  * @property int $podcast_id
- * 
+ *
  */
 class Episode extends Model
 {
