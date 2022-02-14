@@ -15,7 +15,7 @@ class CreateContentUrlsTable extends Migration
     {
         Schema::create('content_urls', function (Blueprint $table) {
             $table->id();
-            $table->string('url')->unique();
+            $table->string('url');
             $table->boolean('status')->default(false);
             $table->timestamps();
         });

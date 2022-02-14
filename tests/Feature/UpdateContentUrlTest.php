@@ -32,7 +32,7 @@ class UpdateContentUrlTest extends TestCase
         $contentUrl = $this->updateContentUrlAction->handle($contentUrl, $this->data);
 
         $this->assertNotEquals($contentUrl->url, $url);
-        $this->assertEquals($this->data['url'], $contentUrl->name);
+        $this->assertEquals($this->data['url'], $contentUrl->url);
     }
 
     /**
