@@ -15,12 +15,12 @@ class CreatePodcastsTable extends Migration
     {
         Schema::create('podcasts', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('description')->nullable();
+            $table->longText('title')->nullable();
+            $table->longText('description')->nullable();
             $table->string('language')->nullable();
-            $table->string('artwork_url')->nullable();
-            $table->string('rss_feed_url')->nullable();
-            $table->string('website_url')->nullable();
+            $table->longText('artwork_url')->nullable();
+            $table->longText('rss_feed_url')->nullable();
+            $table->longText('website_url')->nullable();
             $table->timestamps();
         });
     }

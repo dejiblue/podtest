@@ -20,11 +20,11 @@ class CreateEpisodeAction extends Action
     public function handle(array $data): Episode
     {
         return Episode::firstOrCreate([
-            'title' => $data['name'],
+            'title' => $data['title'],
             'description' => $data['description'],
-            'audio_url' => $data['audioUrl'],
-            'episode_url' => $data['episodeUrl'],
-            'podcast_id' => $data['podcastId'],
+            'audio_url' => $data['audio_url'],
+            'episode_url' => $data['episode_url'],
+            'podcast_id' => $data['podcast_id'],
         ]);
     }
 }

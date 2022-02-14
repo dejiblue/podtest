@@ -18,10 +18,10 @@ class CreateEpisodesTable extends Migration
             $table->foreignId('podcast_id')
                   ->constrained('podcasts')
                   ->cascadeOnDelete();
-            $table->string('title');
-            $table->string('description')->nullable();
-            $table->string('audio_url')->nullable();
-            $table->string('episode_url')->nullable();
+            $table->longText('title')->nullable();
+            $table->longText('description')->nullable();
+            $table->longText('audio_url')->nullable();
+            $table->longText('episode_url')->nullable();
             $table->timestamps();
         });
     }
